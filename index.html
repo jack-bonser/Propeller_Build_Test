@@ -1,0 +1,164 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script type="text/javascript" src="lib/javascript/main.js"></script><!-- JS -->
+		<link type="text/css" rel="stylesheet" href="lib/css/main.css"/><!-- CSS -->
+	</head>
+	<body>
+		<header>
+			<div class="logo"><img src="lib/images/logo.png"/></div>
+			<div class="navigation">
+				<div class="nav-list">
+					<ul>
+						<li class="line-divide-2">About</li>
+						<li class="line-divide-2">Menus</li>
+						<li class="line-divide-2">Locations</li>
+						<li class="line-divide-2">Bookings</li>
+						<li class="line-divide-2">Gallery</li>
+						<li>Contact</li>
+					</ul>
+				</div>
+				<div class="social-links">
+					<ul>
+						<li><span id="facebook"><img src="lib/images/Ellipse.png"/></span></li>
+						<li><span id="twitter"><img src="lib/images/Ellipse.png"/></span></li>
+						<li><span id="instagram"><img src="lib/images/Ellipse.png"/></span></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<div class="main">
+			<div class="main-header">
+				<h2>Welcome to PBT, <br>Propeller!</h2>
+				<p class="font-format">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incid-
+				idunt ut labore et dolare magna aliqua. Ut enim ad minim veniam, quis nostrud exer-
+				citation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+			</div>
+			<div class="main-options">
+				<a class="image-wrapper">
+					<span class="options-tile">
+						<h5>Book a Table</h5>
+						<img src="lib/images/arrows.png"/>
+						<p>Click Here</p>
+					</span>
+					<img src="lib/images/book_a_table.png"/>
+				</a>
+				<a class="image-wrapper">
+					<span class="options-tile">
+						<h5>See our Menus</h5>
+						<img src="lib/images/arrows.png"/>
+						<p>Click Here</p>
+					</span>
+					<img src="lib/images/menus.png"/>
+				</a>
+				<a class="image-wrapper">
+					<span class="options-tile">
+						<h5>Christmas Offer</h5>
+						<img src="lib/images/arrows.png"/>
+						<p>Click Here</p>
+					</span>
+					<img src="lib/images/christmas.png"/>
+				</a>
+				<a class="image-wrapper">
+					<span class="options-tile">
+						<h5>Contact Us</h5>
+						<img src="lib/images/arrows.png"/>
+						<p>Click Here</p>
+					</span>
+					<img src="lib/images/contact.png"/>
+				</a>
+			</div>
+			<div class="image-slideshow">
+				<img src="lib/images/thank_you.png"/>
+			</div>
+		</div>
+		<footer>
+			<div class="footer-wrapper">
+				<div class="footer-option footer-margin">
+					<h5>Twitter</h5>
+					<div class="top-border">
+						<p class="footer-option-format font-format" id="twitter-handle">@PBT_propeller</p>
+						<a class="footer-option-format custom-button" href="#">Follow</a> <!-- posible <p> with curved border -->
+						<p class="footer-option-format font-format" id="twitter-message">Lorem ipsum dolor sit amet, consectetur adipisic-<br>
+							ing elit sed do eiusmod tempor incididunt ut <br>
+							labore et dolore magna aliqua. Ut enim ad minim <br>
+							veniam, quis nostrud exercitation ullamco laboris <br>
+							nisi ut aliquip ex ea commodo consequat
+						</p>
+						<p class="footer-option-format font-format" id="time-of-message">an hour ago</p>
+					</div>
+				</div>
+				<div class="footer-option footer-margin">
+					<h5>Instagram</h5>
+					<div class="top-border">
+						<p class="footer-option-format font-format" id="instagram-handle">PBT_propeller</p>
+						<a class="footer-option-format custom-button" href="#">Follow</a> 
+						<div id="instagram-feed">
+							<img id="latest-feed" src="lib/images/insta_feed_1.png"/>
+							<img id="second-latest-feed" src="lib/images/insta_feed_2.png"/>
+						</div>
+					</div>
+				</div>
+				<div class="footer-option">
+					<h5>Sign Up</h5>
+					<div class="top-border">
+						<p class="footer-option-format font-format">Subscribe to our newsletter and never miss out on our exclusive offers!</p>
+						<label class="input-format"><p>name</p><input/></label>
+						<label class="input-format"><p>email</p><input/></label>
+						<label class="input-format">
+							<p>birthday</p>
+							<div>
+								<select class="select-format" id="day_of_birth" placeholder="dd">
+									<option class="a" value="placeholder">dd</option>
+									<option value="01">01</option>		<option value="02">02</option>		<option value="03">03</option>
+									<option value="04">04</option>		<option value="05">05</option>		<option value="06">06</option>
+									<option value="07">07</option>		<option value="08">08</option>		<option value="09">09</option>
+									<option value="10">10</option>		<option value="11">11</option>		<option value="12">12</option>
+									<option value="13">13</option>		<option value="14">14</option>		<option value="15">15</option>
+									<option value="16">16</option>		<option value="17">17</option>		<option value="18">18</option>
+									<option value="19">19</option>		<option value="20">20</option>		<option value="21">21</option>
+									<option value="22">22</option>		<option value="23">23</option>		<option value="24">24</option>
+									<option value="25">25</option>		<option value="26">26</option>		<option value="27">27</option>
+									<option value="28">28</option>		<option value="29">29</option>		<option value="30">30</option>
+									<option value="31">31</option>
+								</select>
+							</div>
+							<div>
+								<select class="select-format" id="month_of_birth" placeholder="mm" onchange="get_days_of_month()">
+									<option value="placeholder">mm</option>
+									<option value="01">01</option>
+									<option value="02">02</option>
+									<option value="03">03</option>
+									<option value="04">04</option>
+									<option value="05">05</option>
+									<option value="06">06</option>
+									<option value="07">07</option>
+									<option value="08">08</option>
+									<option value="09">09</option>
+									<option value="10">10</option>
+									<option value="11">11</option>
+									<option value="12">12</option>
+								</select>
+							</div>
+						</label>
+						<a class="footer-option-format custom-button" href="#">Submit</a> 
+					</div>
+				</div>
+			</div>
+			<div class="footer-footer">
+				<ul class="footer-info">
+					<li class="line-divide">PBT Propeller</li>
+					<li class="line-divide">1-3 Windsor Court</li>
+					<li class="line-divide">Rugby</li>
+					<li class="line-divide">Warwickshire</li>
+					<li class="line-divide">CV21 3BH</li>
+					<li class="line-divide">pbt@propcom.co.uk</li>
+					<li class="line-divide">01788 566279</li>
+					<li><img src="lib/images/facebook.png"/><img src="lib/images/twitter.png"/><img src="lib/images/instagram.png"/></li>
+				</ul>
+			</div>
+		</footer>
+	</body>
+</html>
+
+
